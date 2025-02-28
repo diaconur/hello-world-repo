@@ -4,6 +4,7 @@ on: push
 
 jobs:
   hello-job:
-    name: Echo text
     runs-on: ubuntu-latest
-  - run: echo "Hello, world!"
+    steps:
+     - name: Echo text
+       run: echo "Hello, world!"
